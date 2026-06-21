@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Cyber Safety Assistant</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ CYBER SAFETY ASSISTANT</h1>
+
+        <textarea
+            id="message"
+            oninput="resetOutput()"
+            placeholder="ENTER MESSAGE"></textarea>
+
+        <br>
+
+        <button onclick="checkMessage()">
+            ANALYSE
+        </button>
+
+        <button onclick="showReason()">
+            REASON
+        </button>
+
+        <div class="progress">
+
+            <div id="riskBar"></div>
+
+        </div>
+
+        <h2 id="percentage"></h2>
+
+        <h3 id="category"></h3>
+
+        <div id="reasonBox"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
